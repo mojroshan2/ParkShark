@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a webpage about blah.">
+    <meta http-equiv="X-UA compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colonial Reports</title> 
+	<link rel="stylesheet" href = "stylepark.css">
+    </head>
+
+<body>
+<p id="ind"></p>
+
+<form><br>
+Enter your First Name: <input type="text" id="firstname"/><br><br>
+Enter your Last Name: <input type="text" id="lastname"/><br><br>
+<input type="submit" value="Submit" onclick="formdata()"/><br>
+</form>
+
+<script>
+
+function formdata() 
+{
+var firstnamevar = document.getElementById("firstname").value;
+var lastnamevar = document.getElementById("lastname").value;
+document.writeln("<h1>Confirmation Page</h1><br>");
+document.writeln("Thank you for completing this form.<br><br>");
+alert(firstnamevar);
+document.writeln("The first name you entered is " + firstnamevar + "<br>");
+document.writeln("The last name you entered is " + lastnamevar);
+
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+function showData()
+{
+	var inputtt = $("#txtvalue").val();
+	
+	$("#lblvalue").html(inputtt);
+}
+</script>
+</head>
+<body>
+
+<div>
+	What is your name?<br>
+	<input type="text" id="txtvalue">
+	<br>
+	Your name: <label id="lblvalue"></label>
+	<br>
+	<input type="button" value="click me" onclick="showData();">
+</div>
+
+</body>
+</html>
