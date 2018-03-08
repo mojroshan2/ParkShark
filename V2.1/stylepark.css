@@ -1,0 +1,23 @@
+body {
+
+}
+
+.float-div {
+    text-align: center; 
+    color: purple;
+    font-family:Arial Black;
+    background-color: ;
+    float:left; 
+    width: 22%;
+    height: 30px;
+    margin: 0px;
+    border: double;
+}
+
+#radioButtons {
+	
+	font-size: 16px;
+	text-align: left;
+	margin-left: 400px;
+	
+}
