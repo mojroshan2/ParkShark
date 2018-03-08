@@ -18,6 +18,15 @@
 <body>
 <h1>Dutch Reports</h1>
 
+
+
+<div class="float-div">
+<a href="backuppark.html">Home</a>      <!-- https://www.albany.edu/~NB388532/App/-->
+</div>
+
+<br><br><br>
+
+<h3>How is Dutch lot right now?</h3>
 <?php
 
 echo "<form method='POST' action='".setComments($conn)."'>
@@ -30,6 +39,5 @@ echo "<form method='POST' action='".setComments($conn)."'>
 getComments($conn);
 
 ?>
-
 </body>
 </html>

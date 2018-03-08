@@ -1,17 +1,17 @@
 body{
     background-color: #9FCDFF;
-	text-align: center;
+	text-align: left;
 	font-family: Tahoma, Verdana;
 }
 
 
 
 .float-div {
-    text-align: center; 
+    text-align: left; 
     color: purple;
-    font-family:Arial Black;
-    background-color: ;
-    float:left; 
+    font-family: Arial Black;
+    background-color: #fff;
+    float: left; 
     width: 22%;
     height: 30px;
     margin: 0px;
@@ -49,7 +49,7 @@ button {
 }
 
 .comment-box{
-	width: 815px;
+	width: 450px;
 	padding: 20px;
 	margin-bottom: 4px;
 	background-color: #fff;
