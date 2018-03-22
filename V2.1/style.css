@@ -1,42 +1,54 @@
-body{
+body{ /*styling for body*/
     background-color: #9FCDFF;
-	text-align: left;
+	text-align: center;
 	font-family: Tahoma, Verdana;
 }
 
+.mapouter{ /*styling for map*/ 
+	overflow:hidden;
+	height:720px;
+	width:480px;
+}
+
+.gmap_canvas { /*styling for map*/ 
+	background:none !important;
+	height:720px;
+	width:480px;
+}
+
+.image{
+	padding-left: 50px;
+	float: right;
+}
 
 
-.float-div {
+.float-div { /*styling for buttons*/
     text-align: left; 
     color: purple;
     font-family: Arial Black;
     background-color: #fff;
-    float: left; 
+    float: left;
     width: 22%;
     height: 30px;
     margin: 0px;
     border: double;
 }
-#radioButtons {
-	
+
+.radioButtons { /*styling for temporary radio buttons*/
 	font-size: 16px;
 	text-align: left;
 	margin-left: 400px;
-	
 }
 
 
-
-textarea{
-	
+textarea{ /*styling for textarea*/
 	width: 400px;
 	height: 80px;
 	background-color: #fff;
 	resize: none;
-	
 }
 
-button {
+button { /*styling for Comment button and homepage buttons*/
 	width: 100px;
 	height: 30px;
 	background-color: #282828;
@@ -48,7 +60,7 @@ button {
 	margin-bottom: 60px;
 }
 
-.comment-box{
+.comment-box{ /*styling for comment box*/
 	width: 450px;
 	padding: 20px;
 	margin-bottom: 4px;
@@ -57,7 +69,7 @@ button {
 	position: relative;
 }
 
-.comment-box p{
+.comment-box p{ /*styling for the paragraph element for the comment box*/
 	font-family: arial;
 	font-size: 14px;
 	line-height: 16px;
@@ -66,13 +78,13 @@ button {
 	
 }
 
-.edit-form{
+.edit-form{ /*styling edit button location on the homepage*/
 	position: absolute;
 	top: 0px;
 	right: 0px;
 }
 
-.edit-form button {
+.edit-form button { /*styling for Comment button on the editcomment.php file*/
 	width: 40px;
 	height: 20px;
 	color: #282828;
@@ -80,18 +92,18 @@ button {
 	opacity: 0.7;
 }
 
-.edit-form button:hover {
+.edit-form button:hover { /*styling for hovering on edit button on homepage*/
 	opacity: 1;
 }
 
 
-.delete-form{
+.delete-form{ /*styling for delete button location on homepage*/
 	position: absolute;
 	top: 0px;
 	right: 60px;
 }
 
-.delete-form button {
+.delete-form button { /*styling for delete button*/
 	width: 40px;
 	height: 20px;
 	color: #282828;
@@ -99,6 +111,6 @@ button {
 	opacity: 0.7;
 }
 
-.delete-form button:hover {
+.delete-form button:hover { /*styling for hovering on delete button on homepage*/
 	opacity: 1;
 }	
