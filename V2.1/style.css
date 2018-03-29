@@ -4,25 +4,36 @@ body{ /*styling for body*/
 	font-family: Tahoma, Verdana;
 }
 
+select{
+	border-radius: 4px;
+	background-color: #e6e6e6;
+	font-family: Verdana;
+	height: 22px;
+
+}
+
 .mapouter{ /*styling for map*/ 
-	overflow:hidden;
-	height:720px;
-	width:480px;
+	border-radius: 6px;
+	margin: auto;
+	overflow: hidden;
+	height: 720px;
+	width: 480px;
 }
 
 .gmap_canvas { /*styling for map*/ 
-	background:none !important;
-	height:720px;
-	width:480px;
+	margin: auto;
+	background: none !important;
+	height: 720px;
+	width: 480px;
 }
 
 .image{
-	padding-left: 50px;
-	float: right;
+	border-radius: 6px;
+	margin: auto;
 }
 
 
-.float-div { /*styling for buttons*/
+.float-div { /*STYLING FOR BUTTON ON DUTCH PAGE*/
     text-align: left; 
     color: purple;
     font-family: Arial Black;
@@ -42,38 +53,42 @@ body{ /*styling for body*/
 
 
 textarea{ /*styling for textarea*/
-	width: 400px;
+border-radius: 6px;
+	width: 480px;
 	height: 80px;
-	background-color: #fff;
+	background-color: #e6e6e6;
 	resize: none;
 }
 
 button { /*styling for Comment button and homepage buttons*/
+	border-radius: 4px;
 	width: 100px;
 	height: 30px;
-	background-color: #282828;
+	background-color: #433b8f;
 	border: none;
 	color: #fff;
-	font-family: arial;
+	font-family: Verdana;
 	font-weight: 400;
 	cursor: pointer;
 	margin-bottom: 60px;
 }
 
 .comment-box{ /*styling for comment box*/
-	width: 450px;
-	padding: 20px;
-	margin-bottom: 4px;
-	background-color: #fff;
-	border-radius: 4px;
+	margin: auto;
+	width: 455px;
+	padding: 15px;
+	margin-bottom: 6px;
+	background-color: #e6e6e6;
+	border-radius: 6px;
 	position: relative;
 }
 
 .comment-box p{ /*styling for the paragraph element for the comment box*/
-	font-family: arial;
+	text-align: left;
+	font-family: Verdana;
 	font-size: 14px;
 	line-height: 16px;
-	color: #282828;
+	color: #433b8f;
 	font-weight: 100;
 	
 }
@@ -85,6 +100,7 @@ button { /*styling for Comment button and homepage buttons*/
 }
 
 .edit-form button { /*styling for Comment button on the editcomment.php file*/
+	margin: auto;
 	width: 40px;
 	height: 20px;
 	color: #282828;
@@ -104,7 +120,8 @@ button { /*styling for Comment button and homepage buttons*/
 }
 
 .delete-form button { /*styling for delete button*/
-	width: 40px;
+	margin: auto;
+	width: 60px;
 	height: 20px;
 	color: #282828;
 	background-color: #fff;
@@ -114,3 +131,29 @@ button { /*styling for Comment button and homepage buttons*/
 .delete-form button:hover { /*styling for hovering on delete button on homepage*/
 	opacity: 1;
 }	
+
+@media only screen and (max-width: 1024px)
+{
+
+body {
+		margin: 0;
+		padding: 0;
+		}
+			
+h3, p, {
+		padding-left: 2em;
+		padding-right: 2em;
+		}
+}
+
+@media only screen and (max-width: 768px)
+{
+
+h3 {
+		font-size: .95em;
+		padding-top: .35em;
+		margin: auto;
+		width: 85%;
+		}
+
+}

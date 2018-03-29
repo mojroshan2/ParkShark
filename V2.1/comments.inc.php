@@ -15,32 +15,38 @@ function getComments($conn) { //function called to get the comments from the SQL
 	$result = mysqli_query($conn, $sql); //result is a connection to the query showing the data from the table
 	
 	while($row = $result->fetch_assoc()) { //while loop 
-		echo "<div class='comment-box'><p>"; //echoing the comment box div element
-			echo $row['uid']."<br><br>"; //echoed user id variable. Fixed to Anonymous. <br> tags between "" allow us to manipulate how the comments appear
+	$id = $row['uid'];
+	$sql2 = "SELECT * FROM user WHERE id='$id'"; 
+	$result2 = mysqli_query($conn, $sql2); 
+		if($row2 = $result2->fetch_assoc()) {
+	
+			echo "<div class='comment-box'><p>"; //echoing the comment box div element
+			echo $row2['uid']."<br><br>"; //echoed user id variable. Fixed to Anonymous. <br> tags between "" allow us to manipulate how the comments appear
 			echo $row['date']."<br><br>"; //echoed date variable; pulls the current date and time to be posted with the comment(s)
 			echo nl2br($row['message']); //message contains the textarea input from the user ie. the comment
-		echo "</p>
-		
-			<form class='delete-form' method='POST' action='".deleteComments($conn)."'>
-				<input type='hidden' name='cid' value='".$row['cid']."'>
-				<button type='submit 'name='commentDelete'>Delete</button>
-			</form>
-		
-			<form class='edit-form' method='POST' action='editcomment.php'>
-				<input type='hidden' name='cid' value='".$row['cid']."'>
-				<input type='hidden' name='uid' value='".$row['uid']."'>
-				<input type='hidden' name='date' value='".$row['date']."'>
-				<input type='hidden' name='message' value='".$row['message']."'>
-				<button>Edit</button>
-			</form>
+			echo "</p>
 			
-		</div>";	/*
-					^^^Form elements for the Edit and Delete buttons that the user can click. First element action calls the deleteComments
-					function listed below, passing the connection variable to it; this is the variable that presumably connects to the table in the db
-					
-					The second element action calls the actual editcomment.php file, this is the page that allows the user to edit the comment
-					Echo displays these two form element buttons to the screen
-					*/
+				<form class='delete-form' method='POST' action='".deleteComments($conn)."'>
+					<input type='hidden' name='cid' value='".$row['cid']."'>
+					<button type='submit 'name='commentDelete'>Delete</button>
+				</form>
+			
+				<form class='edit-form' method='POST' action='editcomment.php'>
+					<input type='hidden' name='cid' value='".$row['cid']."'>
+					<input type='hidden' name='uid' value='".$row['uid']."'>
+					<input type='hidden' name='date' value='".$row['date']."'>
+					<input type='hidden' name='message' value='".$row['message']."'>
+					<button>Edit</button>
+				</form>
+				
+			</div>";	/*
+						^^^Form elements for the Edit and Delete buttons that the user can click. First element action calls the deleteComments
+						function listed below, passing the connection variable to it; this is the variable that presumably connects to the table in the db
+						
+						The second element action calls the actual editcomment.php file, this is the page that allows the user to edit the comment
+						Echo displays these two form element buttons to the screen
+						*/
+		}
 	}
 }
 
@@ -69,3 +75,51 @@ function deleteComments($conn){ //delete comments function being called from its
 	}
 
 }
+
+function getLogin($conn) { //function called to get the comments from the SQL database table, located at bottom of dutchrep.php page
+	if(isset($_POST['loginSubmit'])) {
+		$uid = $_POST['uid'];
+		$pwd = $_POST['pwd'];
+		
+		$sql = "SELECT * FROM user WHERE uid='$uid' AND pwd='$pwd'"; //simple SQL statement which pulls all values from the table
+		$result = mysqli_query($conn, $sql); //result is a connection to the query showing the data from the table
+		if(mysqli_num_rows($result) > 0){ //==1
+			if ($row = $result->fetch_assoc()) { //while loop 
+				$_SESSION['id'] = $row['id'];
+				header("Location: backuppark.php?loginsuccess"); //?loginsuccess
+				exit();
+			}
+		} else {
+			header("Location: backuppark.php?loginfailed"); //?loginfailed
+			exit();
+		}
+	}
+	
+}
+
+function userLogout() {
+	if(isset($_POST['logoutSubmit'])) {
+		session_start();
+		session_destroy();
+		header("Location: backuppark.php");
+		exit();
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
