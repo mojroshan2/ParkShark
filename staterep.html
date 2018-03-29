@@ -1,37 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="This is a webpage about blah.">
-    <meta http-equiv="X-UA compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
 <title>State Reports</title> 
-    </head>
-	<!--<link rel="stylesheet" href = "stylepark.css">-->
-	<style>
-body {
-    background-color: #9FCDFF;
-		text-align: center;
-		font-family: Tahoma, Verdana;
-}
+    
+	<link type="text/css" rel="stylesheet" href = "stylepark.css">
+</head>
 
-.float-div {
-    text-align: center; 
-    color: purple;
-    font-family:Arial Black;
-    background-color: ;
-    float:left; 
-    width: 22%;
-    height: 30px;
-    margin: 0px;
-    border: double;
-}
-	</style>
 
 <body>
 <h1>State Reports</h1>
 <p id="ind"></p>
 
+<!-- State Map -->
+    
+    <center><div id="StateMap"></div></center>
+    
+<script>
+function myMap() {
+  var state1 = new google.maps.LatLng(42.685887,-73.819574);
+  var state2 = new google.maps.LatLng(42.684968,-73.817786);
+  var state3 = new google.maps.LatLng(42.686812,-73.817293);
+
+  var mapCanvas = document.getElementById("StateMap");
+  var myCenter = new google.maps.LatLng(42.685961, -73.817764);
+  var mapOptions = {center: state2, zoom: 16};
+  var StateMap = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({
+      position: myCenter,
+      animation: google.maps.Animation.BOUNCE
+  });
+    marker.setMap(StateMap);
+  
+  var flightPath = new google.maps.Polygon({
+    path: [state1, state2, state3],
+    strokeColor: "#0000FF",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#0000FF",
+    fillOpacity: 0.4
+  });
+  flightPath.setMap(StateMap);
+}
+</script>
+    
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLy5RXgFm9woc9DjwBaGX9SOdjlWlKkx8&callback=myMap"></script>
+    
+    
+    
 
 
 

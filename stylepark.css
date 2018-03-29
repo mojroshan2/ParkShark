@@ -1,4 +1,6 @@
 body {
+    background-image: url("background.jpg");
+    padding: 5px;
     background-color: #9FCDFF;
 		text-align: center;
 		font-family: Tahoma, Verdana;
@@ -13,5 +15,19 @@ body {
     width: 22%;
     height: 30px;
     margin: 0px;
-    border: double
+    border: double;
+}
+
+#radioButtons {
+	
+	font-size: 16px;
+	text-align: left;
+	margin-left: 400px;
+	
+}
+#StateMap {
+    width: 510px;
+    height: 350px;
+    margin-left: 45px;
+    
 }
