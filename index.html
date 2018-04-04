@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
 <title>Park Shark</title>
 
@@ -7,72 +5,82 @@
     <meta name="description" content="This is a webpage about blah.">
     <meta http-equiv="X-UA compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
+	<link rel="stylesheet" href = "style.css">
 
 </head>
-
-<style>
-body {
-    background-color: #9FCDFF;
-		text-align: center;
-		font-family: Tahoma, Verdana;
-}
-.float-div {
-    text-align: center; 
-    color: purple;
-    font-family:Arial Black;
-    background-color: ;
-    float:left; 
-    width: 22%;
-    height: 30px;
-    margin: 0px;
-    border: double;
-}
-</style>
     
 <body>
-<img src="shark1.png" alt="Park Shark" />
-<h1>Check current reports!</h1>
-<button onclick class="buttons">Dutch</button>
-<button onclick class="ban">Colonial</button>
-<button onclick class="ban">Indian</button>
-<button onclick class="buttons">State</button>
-<br>
-<button onclick class="ban">Empire Commons</button>
-<button onclick class="ban">Liberty Terrace</button>
-<button onclick class="buttons">Faculty Lots</button>
 
-<br>
-<br>
-<br>
-    
-<h2>Make a report!</h2>
-    
-<hr>
 
+
+<img src="shark1.png" class="image" alt="Park Shark" />
+<h2>Check current reports!</h2>
+<button onclick="window.location.href='dutchrep.php'" class="buttons">Dutch</button>
+<button onclick="window.location.href='colrep.html'" class="buttons">Colonial</button>
+<button onclick="window.location.href='indrep.html'" class="buttons">Indian</button>
+<button onclick="window.location.href='staterep.html'" class="buttons">State</button><br>
+<button onclick="window.location.href='empcomrep.html'" class="buttons">Empire Com.</button>
+<button onclick="window.location.href='libterrep.html'" class="buttons">Liberty Ter.</button>
+<button onclick="window.location.href='facultyrep.html'" class="buttons">Faculty Lots</button>
+    
+<div class="mapouter"><div class="gmap_canvas"><iframe width="480" height="720" id="gmap_canvas" 
+src="https://maps.google.com/maps?q=1400 washington ave, albany ny&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+</div>
+<br>
+	
+<h3>Make a report! Select a lot:</h3>
+<select onchange="val()" id="parkLot">
+  <option value="Dutch">Dutch</option>
+  <option value="Indian">Indian</option>
+  <option value="Colonial">Colonial</option>
+  <option value="State">State</option>
+</select>
+
+<h3>How is the lot right now?</h3>
+<select onchange="val2()" id="lotCap">
+  <option value="Almost Full/No Spots">Almost Full/No Spots</option>
+  <option value="Very Few Spots">Very Few Spots</option>
+  <option value="A Few Open Spots">A Few Open Spots</option>
+  <option value="Nearly Empty">Nearly Empty</option>
+</select>
+<br><br>
+
+<script>
+function val() {
+    alertval = document.getElementById("parkLot").value;
+    alert(alertval);
+}
+function val2() {
+    alertval2 = document.getElementById("lotCap").value;
+    alert(alertval2);
+}
+</script>
+
+<!--OLD STUFF
 <h4>Start here!</h4>
-
 <p>Which Parking Lot are you in?</p>
 <div class="float-div">
-<a href="dutchrep.html">Dutch</a>     <!-- https://www.albany.edu/~NB388532/App/-->
+<a href="dutchrep.php">Dutch</a>
 </div>
 <div class="float-div">
-<a href="colrep.html">Colonial</a>    <!-- https://www.albany.edu/~NB388532/App/-->
+<a href="colrep.html">Colonial</a>
 </div>
 <div class="float-div">
-<a href="staterep.html">State</a>     <!-- https://www.albany.edu/~NB388532/App/-->
+<a href="staterep.html">State</a>
 </div>
 <div class="float-div">
-<a href="indrep.html">Indian</a>      <!-- https://www.albany.edu/~NB388532/App/-->
+<a href="indrep.html">Indian</a>
 </div>
 <div class="float-div">
-<a href="empcomrep.html">Empire Commons</a>      <!-- https://www.albany.edu/~NB388532/App/-->
+<a href="empcomrep.html">Empire Commons</a>
 </div>
 <div class="float-div">
-<a href="libterrep.html">Liberty Terrace</a>      <!-- https://www.albany.edu/~NB388532/App/-->
+<a href="libterrep.html">Liberty Terrace</a>
 </div>
 <div class="float-div">
-<a href="facultyrep.html">Faculty Lots</a>      <!-- https://www.albany.edu/~NB388532/App/-->
+<a href="facultyrep.html">Faculty Lots</a>
 </div>
-
+-->
 </body>
 </html>
