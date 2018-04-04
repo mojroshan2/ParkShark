@@ -6,23 +6,37 @@
     <meta http-equiv="X-UA compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Colonial Reports</title> 
+	<link rel="stylesheet" href = "style.css">
     </head>
-<script src="jspark.js"></script>
 
 <body>
 <h1>Colonial Reports</h1>
-<p id="col"></p>
+<p id="ind"></p>
+<br>
 
+<!--make a confirmation bubble pop up asking the user to confirm their selection-->
 
+<h3>Select the option that best describes the current lot capacity:<h3>
 
+<div class="radioButtons">
+  <input type="radio" name="rads" value="Almost full/No spots">Almost full/No spots<br><br>
+  <input type="radio" name="rads" value="Very few spots">Very few spots<br><br>
+  <input type="radio" name="rads" value="A few open spots">A few open spots<br><br>
+  <input type="radio" name="rads" value="Many open spots">Many open spots<br><br>
+  <input type="radio" name="rads" value="Nearly empty">Nearly empty
+</div>
+<br>
 
+<button onclick class="buttons">Submit</button>
 
-
-
-
-
-
-
-
+<br><br><br><br><br><br><br><p>Comments:</p><textarea name = "myComments" id="myComments" rows="3" cols = "24" required>
+</textarea>
+<!--
+<button onclick class="buttons">Almost full/No spots</button><br>
+<button onclick class="ban">Very few spots</button><br>
+<button onclick class="ban">A few open spots</button><br>
+<button onclick class="ban">A couple open spots</button><br>
+<button onclick class="buttons">Many open Spots</button>
+-->
     </body>
 </html>
