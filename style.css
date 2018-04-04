@@ -4,7 +4,7 @@ body{ /*styling for body*/
 	font-family: Tahoma, Verdana;
 }
 
-select{
+.selects{
 	border-radius: 4px;
 	background-color: #e6e6e6;
 	font-family: Verdana;
