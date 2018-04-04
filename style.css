@@ -1,0 +1,159 @@
+body{ /*styling for body*/
+    background-color: #9FCDFF;
+	text-align: center;
+	font-family: Tahoma, Verdana;
+}
+
+select{
+	border-radius: 4px;
+	background-color: #e6e6e6;
+	font-family: Verdana;
+	height: 22px;
+
+}
+
+.mapouter{ /*styling for map*/ 
+	border-radius: 6px;
+	margin: auto;
+	overflow: hidden;
+	height: 720px;
+	width: 480px;
+}
+
+.gmap_canvas { /*styling for map*/ 
+	margin: auto;
+	background: none !important;
+	height: 720px;
+	width: 480px;
+}
+
+.image{
+	border-radius: 6px;
+	margin: auto;
+}
+
+
+.float-div { /*STYLING FOR BUTTON ON DUTCH PAGE*/
+    text-align: left; 
+    color: purple;
+    font-family: Arial Black;
+    background-color: #fff;
+    float: left;
+    width: 22%;
+    height: 30px;
+    margin: 0px;
+    border: double;
+}
+
+.radioButtons { /*styling for temporary radio buttons*/
+	font-size: 16px;
+	text-align: left;
+	margin-left: 400px;
+}
+
+
+textarea{ /*styling for textarea*/
+border-radius: 6px;
+	width: 480px;
+	height: 80px;
+	background-color: #e6e6e6;
+	resize: none;
+}
+
+button { /*styling for Comment button and homepage buttons*/
+	border-radius: 4px;
+	width: 100px;
+	height: 30px;
+	background-color: #433b8f;
+	border: none;
+	color: #fff;
+	font-family: Verdana;
+	font-weight: 400;
+	cursor: pointer;
+	margin-bottom: 60px;
+}
+
+.comment-box{ /*styling for comment box*/
+	margin: auto;
+	width: 455px;
+	padding: 15px;
+	margin-bottom: 6px;
+	background-color: #e6e6e6;
+	border-radius: 6px;
+	position: relative;
+}
+
+.comment-box p{ /*styling for the paragraph element for the comment box*/
+	text-align: left;
+	font-family: Verdana;
+	font-size: 14px;
+	line-height: 16px;
+	color: #433b8f;
+	font-weight: 100;
+	
+}
+
+.edit-form{ /*styling edit button location on the homepage*/
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.edit-form button { /*styling for Comment button on the editcomment.php file*/
+	margin: auto;
+	width: 40px;
+	height: 20px;
+	color: #282828;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.edit-form button:hover { /*styling for hovering on edit button on homepage*/
+	opacity: 1;
+}
+
+
+.delete-form{ /*styling for delete button location on homepage*/
+	position: absolute;
+	top: 0px;
+	right: 60px;
+}
+
+.delete-form button { /*styling for delete button*/
+	margin: auto;
+	width: 60px;
+	height: 20px;
+	color: #282828;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.delete-form button:hover { /*styling for hovering on delete button on homepage*/
+	opacity: 1;
+}	
+
+@media only screen and (max-width: 1024px)
+{
+
+body {
+		margin: 0;
+		padding: 0;
+		}
+			
+h3, p, {
+		padding-left: 2em;
+		padding-right: 2em;
+		}
+}
+
+@media only screen and (max-width: 768px)
+{
+
+h3 {
+		font-size: .95em;
+		padding-top: .35em;
+		margin: auto;
+		width: 85%;
+		}
+
+}
