@@ -169,7 +169,7 @@ button { /*styling for Comment button and homepage buttons*/
     left: 200px;
     z-index: 1;
     float: right;
-    background-color: ##433b8f;
+    background-color: #433b8f;
     overflow-x: hidden;
     transition: 0.5s;
 
