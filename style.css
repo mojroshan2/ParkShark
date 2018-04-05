@@ -162,48 +162,11 @@ button { /*styling for Comment button and homepage buttons*/
     margin-left: 50px;
 }
 
-.sidenav2 {
-    height: 100%;
-    width: 0;
-    top: 0; 
-    left: 200px;
-    z-index: 1;
-    float: right;
-    background-color: #433b8f;
-    overflow-x: hidden;
-    transition: 0.5s;
-
-}
-
-.sidenav2 a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #FFF;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav2 a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav2 .closebtn2 {
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-right: 50px;
-}
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
-
-@media screen and (max-height: 450px) {
-  .sidenav2 {padding-top: 15px;}
-  .sidenav2 a {font-size: 18px;}
 
 .setting {
     padding: 8px 8px 8px 32px;
