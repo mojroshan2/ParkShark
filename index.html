@@ -28,23 +28,7 @@
 
 <span style="font-size:40px; cursor:pointer; float:left;" onclick="openNav()">&#9776;</span>
 <br>
-
 <img src="shark1.png" class="image" alt="Park Shark" />
-<h2>Check current reports!</h2>
-<button onclick="window.location.href='dutchrep.html'" class="buttons">Dutch</button>
-<button onclick="window.location.href='colrep.html'" class="buttons">Colonial</button>
-<button onclick="window.location.href='indrep.html'" class="buttons">Indian</button>
-<button onclick="window.location.href='staterep.html'" class="buttons">State</button><br>
-<button onclick="window.location.href='empcomrep.html'" class="buttons">Empire Com.</button>
-<button onclick="window.location.href='libterrep.html'" class="buttons">Liberty Ter.</button>
-<button onclick="window.location.href='facultyrep.html'" class="buttons">Faculty Lots</button>
-    
-<div class="mapouter"><div class="gmap_canvas"><iframe width="480" height="720" id="gmap_canvas" 
-src="https://maps.google.com/maps?q=1400 washington ave, albany ny&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-</div>
-<br>
-	
 <h3>Make a report! Select a lot:</h3>
 <select onchange="val()" id="parkLot" class="selects">
   <option value="Dutch">Dutch</option>
@@ -60,8 +44,14 @@ frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
   <option value="A Few Open Spots">A Few Open Spots</option>
   <option value="Nearly Empty">Nearly Empty</option>
 </select>
+	
+<!--<button onclick="window.location.href='facultyrep.html'" class="buttons">Faculty Lots</button>-->
+    
+<div class="mapouter"><div class="gmap_canvas"><iframe width="480" height="720" id="gmap_canvas" 
+src="https://maps.google.com/maps?q=1400 washington ave, albany ny&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+</div>
 <br><br>
-
 <script>
 function val() {
     alertval = document.getElementById("parkLot").value;
