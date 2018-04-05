@@ -29,6 +29,7 @@ select{
 .image{
 	border-radius: 6px;
 	float: center;
+	position: fixed;
 }
 
 
