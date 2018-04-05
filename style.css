@@ -167,9 +167,9 @@ button { /*styling for Comment button and homepage buttons*/
     width: 0;
     top: 0; 
     left: 200px;
-	z-index: 1;
-	float: right;
-    background-color: #111;
+    z-index: 1;
+    float: right;
+    background-color: ##433b8f;
     overflow-x: hidden;
     transition: 0.5s;
 
@@ -179,7 +179,7 @@ button { /*styling for Comment button and homepage buttons*/
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #FFF;
     display: block;
     transition: 0.3s;
 }
