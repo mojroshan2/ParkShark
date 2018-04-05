@@ -183,7 +183,7 @@ button { /*styling for Comment button and homepage buttons*/
     .sidenav a {font-size: 18px;}
 }
 
-a {
+.settings {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
