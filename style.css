@@ -162,12 +162,6 @@ button { /*styling for Comment button and homepage buttons*/
     margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
 .sidenav2 {
     height: 100%;
     width: 0;
