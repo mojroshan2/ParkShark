@@ -24,6 +24,15 @@
   <a href="empcomrep.html">Empire Commons</a>
   <a href="libterrep.html">Liberty Terrace</a>
   <a href="facultyrep.html">Faculty Lots</a>
+
+	
+</div>
+<div id="mySidenav2" class="sidenav2">
+  <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
 <form action="/action_page.php">
   Username: <input type="text" name="user"><br>
   Password: <input type="text" name="pass"><br>
@@ -32,8 +41,9 @@
 </div>
 
 <span style="font-size:40px; cursor:pointer; float:left;" onclick="openNav()">&#9776;</span>
-<a href="settings.html">
-<img src="cog.png" width="60" height="60" style="float: right;" alt="Settings"/></a>
+<span style="font-size:30px; margin-left: 500px; cursor:pointer;" onclick="openNav2()">&#9776;</span>
+<!--<a href="settings.html">
+<img src="cog.png" width="60" height="60" style="float: right;" alt="Settings"/></a>-->
 <br><br><br><br><br>
 	
 <img src="shark1.png" class="image" alt="Park Shark" />
@@ -77,6 +87,14 @@ function openNav() {
 /* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+}
+	
+function openNav2() {
+    document.getElementById("mySidenav2").style.width = "250px";
+}
+
+function closeNav2() {
+    document.getElementById("mySidenav2").style.width = "0";
 }
 </script>
 </body>
