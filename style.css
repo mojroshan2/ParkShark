@@ -9,7 +9,6 @@ select{
 	background-color: #e6e6e6;
 	font-family: Verdana;
 	height: 22px;
-
 }
 
 .mapouter{ /*styling for map*/ 
@@ -82,7 +81,6 @@ button { /*styling for Comment button and homepage buttons*/
 	border-radius: 6px;
 	position: relative;
 }
-
 .comment-box p{ /*styling for the paragraph element for the comment box*/
 	text-align: left;
 	font-family: Verdana;
@@ -92,13 +90,11 @@ button { /*styling for Comment button and homepage buttons*/
 	font-weight: 100;
 	
 }
-
 .edit-form{ /*styling edit button location on the homepage*/
 	position: absolute;
 	top: 0px;
 	right: 0px;
 }
-
 .edit-form button { /*styling for Comment button on the editcomment.php file*/
 	margin: auto;
 	width: 40px;
@@ -107,18 +103,14 @@ button { /*styling for Comment button and homepage buttons*/
 	background-color: #fff;
 	opacity: 0.7;
 }
-
 .edit-form button:hover { /*styling for hovering on edit button on homepage*/
 	opacity: 1;
 }
-
-
 .delete-form{ /*styling for delete button location on homepage*/
 	position: absolute;
 	top: 0px;
 	right: 60px;
 }
-
 .delete-form button { /*styling for delete button*/
 	margin: auto;
 	width: 60px;
@@ -127,7 +119,6 @@ button { /*styling for Comment button and homepage buttons*/
 	background-color: #fff;
 	opacity: 0.7;
 }
-
 .delete-form button:hover { /*styling for hovering on delete button on homepage*/
 	opacity: 1;
 }	
@@ -177,11 +168,48 @@ button { /*styling for Comment button and homepage buttons*/
     padding: 20px;
 }
 
+.sidenav2 {
+    height: 100%;
+    width: 0;
+    top: 0; 
+    left: 200px;
+	z-index: 1;
+	float: right;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+}
+
+.sidenav2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav2 a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav2 .closebtn2 {
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+@media screen and (max-height: 450px) {
+  .sidenav2 {padding-top: 15px;}
+  .sidenav2 a {font-size: 18px;}
 
 .settings {
     padding: 8px 8px 8px 32px;
