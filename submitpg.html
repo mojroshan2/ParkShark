@@ -12,22 +12,13 @@
 </head>
     
 <body>
-<p>Click "Try it" to display the value of each element in the form.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("frm1");
-    var text = "";
-    var i;
-    for (i = 0; i < x.length ;i++) {
-        text += x.elements[i].value + "<br>";
+   <div id="write">
+        <p>The serial number is: </p>
+    </div>
+    <script>
+    function show() {
+        document.getElementById("write").innerHTML = fname;
     }
-    document.getElementById("demo").innerHTML = text;
-}
-</script>
+    </script>
 </body>
 </html>
