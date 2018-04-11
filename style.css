@@ -8,8 +8,16 @@ select{
 	border-radius: 4px;
 	background-color: #e6e6e6;
 	font-family: Verdana;
-	height: 40px;
 	width: 100px;
+	height: 35px;
+}
+
+.select2{
+	border-radius: 4px;
+	background-color: #e6e6e6;
+	font-family: Verdana;
+	width: 140px;
+	height: 35px;
 }
 
 .mapouter{ /*styling for map*/ 
