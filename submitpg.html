@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Park Shark</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="This is a webpage about blah.">
+    <meta http-equiv="X-UA compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+	<link rel="stylesheet" href = "style.css">
+
+</head>
+    
+<body>
+<p>Click "Try it" to display the value of each element in the form.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("frm1");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+</body>
+</html>
