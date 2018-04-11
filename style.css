@@ -9,7 +9,7 @@ select{
 	background-color: #e6e6e6;
 	font-family: Verdana;
 	width: 100px;
-	height: 35px;
+	height: 45px;
 }
 
 .select2{
@@ -17,7 +17,7 @@ select{
 	background-color: #e6e6e6;
 	font-family: Verdana;
 	width: 170px;
-	height: 35px;
+	height: 45px;
 }
 
 .mapouter{ /*styling for map*/ 
