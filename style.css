@@ -10,6 +10,7 @@ select{
 	font-family: Verdana;
 	width: 100px;
 	height: 45px;
+	text-align: center;
 }
 
 .select2{
@@ -18,6 +19,7 @@ select{
 	font-family: Verdana;
 	width: 170px;
 	height: 45px;
+	text-align: center;
 }
 
 input{
