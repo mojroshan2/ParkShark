@@ -20,6 +20,15 @@ select{
 	height: 45px;
 }
 
+input{
+	border-radius: 4px;
+	background-color: #e6e6e6;
+	font-family: Verdana;
+	width: 100px;
+	height: 45px;
+	text-align: center;
+}
+
 .mapouter{ /*styling for map*/ 
 	border-radius: 6px;
 	margin: auto;
