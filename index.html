@@ -35,6 +35,7 @@
 <br><br><br><br>
 	
 <img src="ps2.png" class="image" alt="Park Shark" />
+	
 <h3>Make a report! Select a lot:</h3>
 <select onchange="val()" id="parkLot">
   <option value="Dutch">Dutch</option>
@@ -52,8 +53,13 @@
 </select>
 <br><br>
 	
-<input type="submit" value="Submit">
+	
+<input type="submit" onclick="option">
+	
+<input type="text" id="txtbox">	
 
+	
+	
 <!--<button onclick="window.location.href='facultyrep.html'" class="buttons">Faculty Lots</button>
     
 <div class="mapouter"><div class="gmap_canvas"><iframe width="480" height="720" id="gmap_canvas" 
@@ -63,6 +69,10 @@ frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
 	
 <br><br>
 <script>
+function option() {
+   document.getElementById("txtbox").value = document.getElementById("lotCap").value;
+}	
+		
 function val() {
     alertval = document.getElementById("parkLot").value;
     alert(alertval);
